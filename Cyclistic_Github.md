@@ -142,12 +142,11 @@ Below are the steps I took to clean the monthly data sets:
 -   Remove all classic bike trips that have a null start/end station. Classic 
     bikes have to start and end at a docking station while electric bikes 
     do not.
--   Remove trips that have null latitude and/or longitude values
+-   Remove trips that have null latitude and/or longitude values.
 -   Remove trips that have a ride lengths of less than one minute, or
     greater than one day. These outliers represent possibly corrupt data, 
-    invalid trips, stolen bikes, or maintenance trips.  
-          
-         
+    invalid trips, stolen bikes, or maintenance trips.
+
 
 ## Data Manipulation
 
