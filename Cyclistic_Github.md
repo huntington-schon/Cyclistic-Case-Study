@@ -5,7 +5,7 @@ Schon Huntington
 
 <center>
 <img
-src="/Users/schonhuntington/Documents/Case%20Study/cyclistic_logo.jpeg"
+src="cyclistic_logo.jpeg"
 style="width:40.0%;height:40.0%" />
 </center>
 
