@@ -135,20 +135,17 @@ some cases.
 Below are the steps I took to clean the monthly data sets:
 
 -   Find and remove values in the ride_id column that were not 16
-    characters in length
-    -   This was performed by creating a new column and using the LEN
-        function
+    characters in length. This was performed by creating a new column 
+    and using the LEN function.
 -   Find and replace docked_bike with classic_bike in the rideable_type
-    column
-    -   Docked bike was the old term that was replaced with classic bike
--   Remove all classic bike trips that have a null start/end station
-    -   Classic bikes have to start and end at a docking station while
-        electric bikes do not
+    column. Docked bike was the old term that was replaced with classic bike.
+-   Remove all classic bike trips that have a null start/end station. Classic 
+    bikes have to start and end at a docking station while electric bikes 
+    do not.
 -   Remove trips that have null latitude and/or longitude values
 -   Remove trips that have a ride lengths of less than one minute, or
-    greater than one day
-    -   These outliers represent possibly corrupt data, invalid trips,
-        stolen bikes, or maintenance trips  
+    greater than one day. These outliers represent possibly corrupt data, 
+    invalid trips, stolen bikes, or maintenance trips.  
           
          
 
