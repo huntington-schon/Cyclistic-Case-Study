@@ -144,7 +144,7 @@ Below are the steps I took to clean the monthly data sets:
 -   Remove trips that have null latitude and/or longitude values.
 -   Remove trips that have a ride lengths of less than one minute, or
     greater than one day. These outliers represent possibly corrupt data, 
-    invalid trips, stolen bikes, or maintenance trips.
+    invalid trips, stolen bikes, or maintenance trips.  
 
   
 
@@ -389,6 +389,7 @@ ggplot(pie, aes(x="", y=total_rides, fill=member_casual)) +
  
 
 
+   
 ``` r
 divvy_2021 %>%  
   group_by(member_casual) %>% 
@@ -411,6 +412,7 @@ divvy_2021 %>%
  
 
 
+   
 ``` r
 divvy_2021 %>%    
   ggplot(aes(x = rideable_type, fill = member_casual)) + geom_bar(position = "dodge") + 
@@ -427,6 +429,7 @@ divvy_2021 %>%
  
 
 
+   
 ``` r
 divvy_2021 %>%
   mutate(weekday = wday(started_at, label = TRUE)) %>%  
@@ -448,6 +451,7 @@ divvy_2021 %>%
  
 
 
+   
 ``` r
 divvy_2021 %>%   
   group_by(member_casual, month) %>%  
@@ -468,6 +472,7 @@ divvy_2021 %>%
  
 
 
+   
 ``` r
 divvy_2021 %>% 
   mutate(weekday = wday(started_at, label = TRUE)) %>%  
@@ -488,6 +493,7 @@ divvy_2021 %>%
  
 
 
+   
 ``` r
 divvy_2021 %>%  
   group_by(member_casual, month) %>% 
@@ -507,6 +513,7 @@ divvy_2021 %>%
  
 
 
+   
 ``` r
 divvy_2021 %>%     
   group_by(member_casual, tod) %>% 
@@ -528,6 +535,7 @@ divvy_2021 %>%
  
 
 
+   
 ## Findings
 
 -   Members took roughly 500,000 more rides than casual riders in 2021;
