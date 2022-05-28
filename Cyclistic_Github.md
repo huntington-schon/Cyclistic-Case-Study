@@ -1,6 +1,6 @@
 Cyclistic Case Study
 ================
-Schon Huntington
+Schon Huntington  
 05-07-2022
 
 <center>
@@ -366,7 +366,7 @@ divvy_2021 %>%
                                 "2.5 Mil", "3.0 Mil")) +
   theme_bw()
 ```
-
+<p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-16-1.png" style="display: block; margin: auto;" />
 
   
