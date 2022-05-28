@@ -147,7 +147,8 @@ Below are the steps I took to clean the monthly data sets:
     invalid trips, stolen bikes, or maintenance trips.  
 
   
- 
+ 
+
 ## Data Manipulation
 
 Code to combine monthly tables into one table for all of 2021:
