@@ -111,7 +111,6 @@ divvy_12_2021 <- read_excel("Documents/Case Study/12-2021-divvy-tripdata.xlsx",
                  "text", "text", "text", "text", "numeric", "numeric", 
                  "numeric", "numeric", "text"))
 ```
-
   
  
 
@@ -147,6 +146,7 @@ Below are the steps I took to clean the monthly data sets:
     greater than one day. These outliers represent possibly corrupt data, 
     invalid trips, stolen bikes, or maintenance trips.
 
+  
 
 ## Data Manipulation
 
@@ -388,6 +388,7 @@ ggplot(pie, aes(x="", y=total_rides, fill=member_casual)) +
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-18-1.png" style="display: block; margin: auto;" />  
  
 
+
 ``` r
 divvy_2021 %>%  
   group_by(member_casual) %>% 
@@ -409,6 +410,7 @@ divvy_2021 %>%
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-19-1.png" style="display: block; margin: auto;" />  
  
 
+
 ``` r
 divvy_2021 %>%    
   ggplot(aes(x = rideable_type, fill = member_casual)) + geom_bar(position = "dodge") + 
@@ -423,6 +425,7 @@ divvy_2021 %>%
 <p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-20-1.png" style="display: block; margin: auto;" />  
  
+
 
 ``` r
 divvy_2021 %>%
@@ -444,6 +447,7 @@ divvy_2021 %>%
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-22-1.png" style="display: block; margin: auto;" />  
  
 
+
 ``` r
 divvy_2021 %>%   
   group_by(member_casual, month) %>%  
@@ -462,6 +466,7 @@ divvy_2021 %>%
 <p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-23-1.png" style="display: block; margin: auto;" />  
  
+
 
 ``` r
 divvy_2021 %>% 
@@ -482,6 +487,7 @@ divvy_2021 %>%
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-24-1.png" style="display: block; margin: auto;" />  
  
 
+
 ``` r
 divvy_2021 %>%  
   group_by(member_casual, month) %>% 
@@ -499,6 +505,7 @@ divvy_2021 %>%
 <p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-25-1.png" style="display: block; margin: auto;" />  
  
+
 
 ``` r
 divvy_2021 %>%     
@@ -519,6 +526,7 @@ divvy_2021 %>%
 <p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-26-1.png" style="display: block; margin: auto;" />  
  
+
 
 ## Findings
 
