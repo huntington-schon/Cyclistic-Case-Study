@@ -388,7 +388,7 @@ ggplot(pie, aes(x="", y=total_rides, fill=member_casual)) +
   geom_label(label="55%", x=.93, y=1400000, label.padding = unit(0.55, "lines"), 
     label.size = 0.35, color = "black",fill="White")
 ```
-
+<p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-18-1.png" style="display: block; margin: auto;" />  
  
 
@@ -409,7 +409,7 @@ divvy_2021 %>%
                                 "25 Min", "30 Min")) +
   theme_bw()
 ```
-
+<p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-19-1.png" style="display: block; margin: auto;" />  
  
 
@@ -424,7 +424,7 @@ divvy_2021 %>%
                      labels = c("0.5 Mil", "1.0 Mil", "1.5 Mil", "2.0 Mil")) +
   theme_bw()
 ```
-
+<p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-20-1.png" style="display: block; margin: auto;" />  
  
 
@@ -444,7 +444,7 @@ divvy_2021 %>%
   scale_y_continuous(labels = comma) +
   theme_bw()
 ```
-
+<p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-22-1.png" style="display: block; margin: auto;" />  
  
 
@@ -463,7 +463,7 @@ divvy_2021 %>%
   scale_y_continuous(labels = comma) +
   theme_bw()
 ```
-
+<p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-23-1.png" style="display: block; margin: auto;" />  
  
 
@@ -482,7 +482,7 @@ divvy_2021 %>%
                     labels = c("Casual", "Member")) +
   theme_bw()
 ```
-
+<p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-24-1.png" style="display: block; margin: auto;" />  
  
 
@@ -500,7 +500,7 @@ divvy_2021 %>%
   scale_y_continuous(labels = comma) +
   theme_bw()
 ```
-
+<p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-25-1.png" style="display: block; margin: auto;" />  
  
 
@@ -520,7 +520,7 @@ divvy_2021 %>%
   theme_bw() +
   theme(axis.text.x = element_text(angle = 45, vjust = .5))
 ```
-
+<p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-26-1.png" style="display: block; margin: auto;" />  
  
 
