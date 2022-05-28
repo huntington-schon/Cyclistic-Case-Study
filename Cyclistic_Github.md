@@ -6,7 +6,7 @@ Schon Huntington
 <center>
 <img
 src="cyclistic_logo.jpeg"
-style="width:40.0%;height:40.0%" />
+style="width:10.0%;height:10.0%" />
 </center>
 
 ## Cyclistic
