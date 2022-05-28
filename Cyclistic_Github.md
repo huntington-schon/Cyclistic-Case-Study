@@ -147,7 +147,7 @@ Below are the steps I took to clean the monthly data sets:
     invalid trips, stolen bikes, or maintenance trips.  
 
   
-
+ 
 ## Data Manipulation
 
 Code to combine monthly tables into one table for all of 2021:
@@ -386,10 +386,10 @@ ggplot(pie, aes(x="", y=total_rides, fill=member_casual)) +
 ```
 <p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-18-1.png" style="display: block; margin: auto;" />  
+
+  
  
-
-
-   
+  
 ``` r
 divvy_2021 %>%  
   group_by(member_casual) %>% 
@@ -410,9 +410,9 @@ divvy_2021 %>%
 <p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-19-1.png" style="display: block; margin: auto;" />  
  
-
-
-   
+  
+ 
+ 
 ``` r
 divvy_2021 %>%    
   ggplot(aes(x = rideable_type, fill = member_casual)) + geom_bar(position = "dodge") + 
@@ -426,10 +426,10 @@ divvy_2021 %>%
 ```
 <p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-20-1.png" style="display: block; margin: auto;" />  
+
+  
  
-
-
-   
+  
 ``` r
 divvy_2021 %>%
   mutate(weekday = wday(started_at, label = TRUE)) %>%  
@@ -448,10 +448,10 @@ divvy_2021 %>%
 ```
 <p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-22-1.png" style="display: block; margin: auto;" />  
+
+  
  
-
-
-   
+ 
 ``` r
 divvy_2021 %>%   
   group_by(member_casual, month) %>%  
@@ -469,10 +469,10 @@ divvy_2021 %>%
 ```
 <p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-23-1.png" style="display: block; margin: auto;" />  
+
+  
  
-
-
-   
+ 
 ``` r
 divvy_2021 %>% 
   mutate(weekday = wday(started_at, label = TRUE)) %>%  
@@ -490,10 +490,10 @@ divvy_2021 %>%
 ```
 <p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-24-1.png" style="display: block; margin: auto;" />  
+
+  
  
-
-
-   
+  
 ``` r
 divvy_2021 %>%  
   group_by(member_casual, month) %>% 
@@ -510,10 +510,10 @@ divvy_2021 %>%
 ```
 <p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-25-1.png" style="display: block; margin: auto;" />  
+
+  
  
-
-
-   
+ 
 ``` r
 divvy_2021 %>%     
   group_by(member_casual, tod) %>% 
@@ -532,10 +532,10 @@ divvy_2021 %>%
 ```
 <p align="center">
 <img src="Cyclistic_Github_files/figure-gfm/unnamed-chunk-26-1.png" style="display: block; margin: auto;" />  
+
+  
  
-
-
-   
+ 
 ## Findings
 
 -   Members took roughly 500,000 more rides than casual riders in 2021;
@@ -566,7 +566,9 @@ divvy_2021 %>%
     evening rush hour times. Casual riders have a steady climb of
     ridership throughout the day with peak ridership occurring at the
     evening rush hour.  
-     
+
+  
+ 
 
 ## Recommendations
 
